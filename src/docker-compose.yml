@@ -2,9 +2,13 @@ services:
   api:
     container_name: mymicroservice
     image: mymicroservice
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
+    environment:
+      DatabaseServer: "sqlserver"
+      DatabasePort: "1433"
+      DatabaseUser: "SA"
+      DatabasePassword: "VeryComplex123Password"
+      DatabaseName: "mym"
     ports:
       - "3000:8080"
     networks:
