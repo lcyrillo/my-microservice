@@ -28,4 +28,3 @@ PUT -> http://localhost:3000/api/person?id={id}
     }
 
 DELETE -> http://localhost:3000/api/person?id={id}
-# my-microservice
