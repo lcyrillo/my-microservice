@@ -1,6 +1,6 @@
 # MyMicroservice
 
-Exemplo criado para exemplificar como subir uma aplicação .Net com banco de dados SQL Server em container Docker.
+Exemplo criado para mostrar como subir uma aplicação .Net com banco de dados SQL Server em container Docker.
 
 # Rodando a aplicação
 
@@ -19,7 +19,7 @@ POST -> http://localhost:3000/api/person (Insere)
     "birthday": "1989-02-02"
     }
 
-PUT -> http://localhost:3000/api/person?id=4
+PUT -> http://localhost:3000/api/person?id={id}
   body:
     {
     "firstname": "Lucas",
@@ -27,5 +27,5 @@ PUT -> http://localhost:3000/api/person?id=4
     "birthday": "1989-02-02"
     }
 
-DELETE -> http://localhost:3000/api/person?id=4
+DELETE -> http://localhost:3000/api/person?id={id}
 # my-microservice
